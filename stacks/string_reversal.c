@@ -7,10 +7,6 @@ void reverse(char str[], int n){
     char stack[MAX];
     // push
     for(int i=0; i<n; i++){
-        if(top == MAX-1){
-        printf("error: stack overflow\n");
-        return;
-        }
         stack[++top] = str[i];
     }
     // pop
